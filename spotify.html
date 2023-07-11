@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Spotify</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #181818;
+      color: #fff;
+    }
+    
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    h1 {
+      color: #1DB954;
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+    }
+    
+    .logo img {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+    }
+    
+    /* Show All Songs Section */
+    .all-songs {
+      margin-bottom: 40px;
+    }
+    
+    .song-list {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    
+    .song-list li {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .song-list img {
+      width: 200px;
+      height: 200px;
+      margin-bottom: 10px;
+    }
+    
+    /* Most Played Songs Section */
+    .most-played {
+      margin-bottom: 40px;
+    }
+    
+    .most-played-list {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    
+    .most-played-list li {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .most-played-list img {
+      width: 200px;
+      height: 200px;
+      margin-bottom: 10px;
+    }
+    
+    /* Add Songs Section */
+    .add-song {
+      margin-bottom: 40px;
+    }
+    
+    .song-form {
+      display: flex;
+      margin-top: 10px;
+    }
+    
+    .song-input {
+      flex-grow: 1;
+      padding: 10px;
+      font-size: 14px;
+      background-color: #282828;
+      border: none;
+      color: #fff;
+    }
+    
+    .add-button {
+      background-color: #1DB954;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 700;
+      transition: background-color 0.3s ease;
+    }
+    
+    .add-button:hover {
+      background-color: #1ED760;
+    }
+    
+    /* Spotify Layout Styles */
+    .spotify-layout {
+      display: grid;
+      grid-template-columns: 300px 1fr;
+      gap: 20px;
+    }
+    
+    .sidebar {
+      background-color: #040404;
+      padding: 20px;
+    }
+    
+    .sidebar ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .sidebar li {
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+    }
+    
+    .sidebar li img {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+    }
+    
+    /* Main Content Styles */
+    .main-content {
+      background-color: #282828;
+      padding: 20px;
+    }
+    
+    /* Heading Styles */
+    .heading {
+      color: #fff;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>
+      <div class="logo">
+        <a href="https://www.freepnglogos.com/pics/spotify-logo-png" title="Image from freepnglogos.com"><img src="https://www.freepnglogos.com/uploads/spotify-logo-png/file-spotify-logo-png-4.png" width="30" alt="file spotify logo png" /></a>
+      </div>
+      Spotify
+    </h1>
+    
+    <!-- Spotify Layout -->
+    <div class="spotify-layout">
+      
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <ul>
+          <li>
+            <img src="https://icons8.com/icon/83326/home" />
+            Home
+          </li>
+          <li>
+            <img src="https://icons8.com/icon/82712/search" alt="Search" />
+            Search
+          </li>
+          <li>
+            <img src="https://www.freepnglogos.com/uploads/your-library-music-icon-3.png" alt="Your Library" />
+            Your Library
+          </li>
+          <li>
+            <img src="https://www.freepnglogos.com/uploads/create-playlist-music-icon-19.png" alt="Create Playlist" />
+            Create Playlist
+          </li>
+        </ul>
+      </aside>
+      
+      <div class="main main-content">
+        
+        <section class="all-songs">
+          <h2 class="heading">All Songs</h2>
+          <ul class="song-list">
+            <li>
+              <img src="https://picsum.photos/200" alt="Song 1" />
+              <span>Song 1</span>
+              <button class="add-button">Add to Playlist</button>
+            </li>
+            <li>
+              <img src="https://picsum.photos/200" alt="Song 2" />
+              <span>Song 2</span>
+              <button class="add-button">Add to Playlist</button>
+            </li>
+            <li>
+              <img src="https://picsum.photos/200" alt="Song 3" />
+              <span>Song 3</span>
+              <button class="add-button">Add to Playlist</button>
+            </li>
+            <li>
+              <img src="https://picsum.photos/200" alt="Song 4" />
+              <span>Song 4</span>
+              <button class="add-button">Add to Playlist</button>
+            </li>
+            <li>
+              <img src="https://picsum.photos/200" alt="Song 5" />
+              <span>Song 5</span>
+              <button class="add-button">Add to Playlist</button>
+            </li>
+            <li>
+              <img src="https://picsum.photos/200" alt="Song 6" />
+              <span>Song 6</span>
+              <button class="add-button">Add to Playlist</button>
+            </li>
+          </ul>
+        </section>
+        
+        <section class="most-played">
+          <h2 class="heading">Most Played Songs</h2>
+          <ul class="most-played-list">
+            <li>
+              <img src="https://picsum.photos/200/300/?blur" alt="Song A" />
+              <span>Song A</span>
+              <button class="add-button">Add to Playlist</button>
+            </li>
+            <li>
+              <img src="https://picsum.photos/200" alt="Song B" />
+              <span>Song B</span>
+              <button class="add-button">Add to Playlist</button>
+            </li>
+            <li>
+              <img src="https://picsum.photos/200" alt="Song C" />
+              <span>Song C</span>
+              <button class="add-button">Add to Playlist</button>
+            </li>
+            <li>
+              <img src="https://picsum.photos/200" alt="Song D" />
+              <span>Song D</span>
+              <button class="add-button">Add to Playlist</button>
+            </li>
+            <li>
+              <img src="https://picsum.photos/200" alt="Song E" />
+              <span>Song E</span>
+              <button class="add-button">Add to Playlist</button>
+            </li>
+            <li>
+              <img src="https://picsum.photos/200" alt="Song F" />
+              <span>Song F</span>
+              <button class="add-button">Add to Playlist</button>
+            </li>
+          </ul>
+        </section>
+      </div>
+      
+    </div>
+    
+  </div>
+</body>
+</html>
